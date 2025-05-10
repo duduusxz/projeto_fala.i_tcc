@@ -7,7 +7,7 @@
 
 
 body {
-    background-color: #404040;
+    background-color: #29272F;
     font-family: 'Young Serif', sans-serif;
     cursor: pointer;
     width: 100%;
@@ -111,6 +111,7 @@ nav ul {
     cursor: pointer;
     scale: 80%;
     transition: 0.7s;
+    border: solid 1px #daaf22;
 }
 
 .comecando:hover{
@@ -172,6 +173,7 @@ nav ul {
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
+    border: solid 1px #daaf22;  
 }
 
 .card-agenda:hover, .card-microfone:hover, .card-ranking:hover {
