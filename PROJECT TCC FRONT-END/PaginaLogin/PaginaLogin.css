@@ -7,7 +7,7 @@ body{
 
 
 .titulo-bem-vindo{
-    color: #FAD86B;
+    color: #ffc508;
     font-family: sans-serif;
     font-family: "Young Serif", serif;
     font-weight: 400;
@@ -30,7 +30,7 @@ body{
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
-    color: #FAD86B;
+    color: #ffc508;
     
    
   }
@@ -55,39 +55,45 @@ body{
 }
 
 p{
-    color: #FAD86B;
+    color: #29272F;
 }
 
 #rm{
     width: 250px;
     height: 36px;
-    border: solid 1px #FAD86B;
-    color: #FEEBBA;
+    border: solid 1px #29272F;
+    color: #29272F;
     background-color: transparent;
-    
 }
-#senha  {
+
+#senha {
     width: 250px;
     height: 36px;
-    border: solid 1px #FAD86B;
+    border: solid 1px #29272F;
     background-color: transparent;
-    color: #FEEBBA;
-    margin-left: 300px;
-    position: absolute;
-    top: 265px;
-    right: 1px;
-    transform: translateY(0);
+    color: #29272F;
     transition: transform 0.5s ease-in-out;
+}
+
+.linha-rm-senha {
+    display: flex;
+    gap: 20px; /* Espaço entre os campos */
+}
+
+#email{
+    border: solid 1px #29272F;
+    color: #29272F;
 }
 
 #louco{
     margin-left: 285px;
     margin-top: -70px;
+    color: #29272F;
 }
 
 
 #texto-apresentacao-bem-vindo{
-    color: #FEEBBA ;
+    color: #29272F ;
 }
 
 #texto1{
@@ -103,7 +109,8 @@ button{
 }
 
 #entrar{
-    margin-top: 55px;
+    margin-top: 20px;
+    border: solid 1px #ffc508;
 }
 
 .container-bem-vindo{
@@ -113,12 +120,12 @@ button{
 }
     
 body.dark-mode {
-    background-color: #121212;
-    color: white;
+    background-color: #29272F;
+    color: #feffec;
 }
 body.light-mode {
-    background-color: white;
-    color: black;
+    background-color: #feffec;
+    color: #29272F;
 }
 .toggle-mode {
     position: fixed;
@@ -126,34 +133,50 @@ body.light-mode {
     right: 20px;
     padding: 10px 20px;
     background-color: #007bff;
-    color: white;
+    color: #feffec;
     border: none;
     cursor: pointer;
     border-radius: 5px;
 } 
 
 body.dark-mode #texto-apresentacao-bem-vindo{
-    color: #29272F;
+    color: #FEEBBA;
 }
 
 body.dark-mode #rm {
-    color: #29272F;
-    border: solid 1px #29272F;
+    color: #FEEBBA;
+    border: solid 1px #FEEBBA;
 }
 
 body.dark-mode #senha {
-    color: #29272F;
-    border: solid 1px #29272F;
+    color: #FEEBBA;
+    border: solid 1px #FEEBBA;
 }
 
 body.dark-mode #entrar {
     color: #29272F;
-    border: solid 1px #29272F;
+    border: none;
 }
 
 body.dark-mode #email {
-    color: #29272F;
-    border: solid 1px  #29272F;
+    color: #FEEBBA;
+    border: solid 1px  #FEEBBA;
+}
+
+body.dark-mode #louco {
+    color: #FAD86B;
+}
+
+body.dark-mode p {
+    color: #FAD86B;
+}
+
+body.dark-mode h3 {
+    color: #FAD86B;
+}
+
+body.dark-mode .titulo-bem-vindo{
+    color: #FAD86B;
 }
 
 

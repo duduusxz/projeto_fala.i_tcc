@@ -9,7 +9,9 @@
 body {
     background-color: #404040;
     font-family: 'Young Serif', sans-serif;
-    cursor: pointer; 
+    cursor: pointer;
+    width: 100%;
+    height: 65vw;
 }
 
 
@@ -76,7 +78,7 @@ nav ul {
 }
 
 .conta:hover {
-    background-color: #FEEBBA;
+    background-color: #daaf22;
 }
 
 .titulo {
@@ -133,7 +135,8 @@ nav ul {
     text-align: center;
     margin-top: 82px;
     margin-left: 40px;
-    color: #29272F;  
+    color: #29272F; 
+    transition: 0.7s; 
 }
 
 .botao-comecar button:hover {
@@ -141,16 +144,10 @@ nav ul {
     font-family: Titillium Web, sans-serif;
 }
 
-
-
-
-
-
-
 .cards-container {
     display: flex;
     justify-content: center; 
-    gap: 40px; 
+    gap: 110px;
     margin-top: 160px;
 }
 
@@ -158,7 +155,7 @@ nav ul {
     display: flex;
     flex-direction: column; 
     align-items: center; 
-    gap: 15px;
+    gap: 30px;
 }
 
 .card-agenda, .card-microfone, .card-ranking {
@@ -186,12 +183,15 @@ nav ul {
     border: none;
     cursor: pointer;
     border-radius: 20px;
+    transition: transform 0.3s ease;
     text-align: center;
-    transition: background-color 0.3s ease;
+    font-family: Titillium Web, sans-serif;
 }
 
 .botao:hover {
     background-color: #daaf22;
+    transform: scale(1.05);
+    font-family: Titillium Web, sans-serif;
 }
 
 .botao a {

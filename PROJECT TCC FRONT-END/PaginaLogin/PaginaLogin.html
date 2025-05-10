@@ -10,36 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Young+Serif&display=swap" rel="stylesheet"> <!--Bibliotecas para fontes--->
 
     <title>Pagina Login Fala.i</title>
-
-    <style>
-        body.light-mode {
-            background-color: white;
-            color: black;
-        }
-        .texto-apresentacao-bem-vindo {
-            transition: color 0.3s ease;
-        }
-        .light-mode #texto-apresentacao-bem-vindo {
-            color: black;
-        }
-        .dark-mode #texto-apresentacao-bem-vindo {
-            color: white;
-        }
-        .controls {
-            margin: 10px 0;
-        }
-        .controls button {
-            background: none;
-            border: none;
-            font-size: 18px;
-            cursor: pointer;
-            color: #007BFF;
-            margin: 0 10px;
-        }
-        .controls button:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 <body class="dark-mode">
 
@@ -65,18 +35,23 @@
         <div class="login">
             <h3>Login</h3> 
             <p>E-mail</p> 
-            <input type="text" placeholder="Digite seu email" id="email"> 
+            <input type="text" placeholder="  Digite seu email" id="email"> 
 
-            <p>Rm</p>
-            <input type="text" placeholder="Digite seu Rm" id="rm">
-            
-            <p id="louco">Coisas</p> 
-            <input type="text" placeholder="Digite sua senha" id="senha">
+            <div class="linha-rm-senha">
+                <div>
+                    <p>Rm</p>
+                    <input type="text" placeholder="  Digite seu Rm" id="rm">
+                </div>
+                <div>
+                    <p>Senha</p>
+                    <input type="text" placeholder="  Digite sua senha" id="senha">
+                </div>
+            </div>
 
             <button type="submit" id="entrar">Entrar</button>
         </div>
     </div>
-
+     
     <script>
         function toggleMode() {
             document.body.classList.toggle('light-mode');
@@ -104,10 +79,10 @@
 
         entrar.addEventListener('click', () => {
             if (rm.value === '123' && senha.value === '123') {
-                window.location.href = '/Pagina/PaginaLogin/PaginaInicial';
+                window.location.href = '../PaginaInicial/TelaInicial.html';
             } else {
                 alert('Usuário ou senha inválidos');
-            }
+            };
         });
     </script>
 </body>

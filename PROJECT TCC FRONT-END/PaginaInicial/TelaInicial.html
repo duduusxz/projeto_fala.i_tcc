@@ -10,31 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Young+Serif&display=swap" rel="stylesheet"> <!--Bibliotecas para fontes-->
     <link rel="shortcut icon" href="Images/Captura_de_tela_2025-03-14_174727-removebg-preview.png" type="image/x-icon">
+    <script src="digitação.js"></script>
     <script src="https://kit.fontawesome.com/345c519b8f.js" crossorigin="anonymous"></script>
 
     <title>Página Inicial</title>
-
-    <style>
-        /* Estilos para os botões de aumentar e diminuir a fonte */
-        .font-size-buttons {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        .font-size-buttons button {
-            background: none;
-            border: none;
-            font-size: 24px;
-            cursor: pointer;
-            margin: 0 10px;
-        }
-    </style>
 </head>
 <body>
     
     <nav>
         <ul>
-            <li><a href="PaginaLogin.html">Serviços</a></li>
+            <li><a href="../PaginaInicial/TelaInicial.html">Serviços</a></li>
             <li><a href="PaginaCadastro.html">Quem somos</a></li>
             <li><a href="PaginaInicial.html">Tutorial</a></li>
             <li><a href="PaginaInicial.html">Contato</a></li>
@@ -48,7 +33,7 @@
 
     <section class="comecando">
         <div class="botao-comecar">
-            <button onclick="window.location.href='PaginaLogin.html'">COMECE JÁ</button>
+            <button onclick="window.location.href='../PaginaLogin/PaginaLogin.html'" id="botao-comecar">COMECE JÁ</button>
         </div>
         
         <p id="textinho">
@@ -57,81 +42,31 @@
 
     </section>
 
-    <section class="texto">
-        <p>
-            
-        </p>
-    </section>
-
-    <section class="texto" id="text"></section>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const textElement = document.getElementById("text");
-            const textContent = "Aprimore sua comunicação e fale com confiança! Descubra técnicas eficazes para melhorar sua oralidade e se destacar em qualquer situação!";
-            let index = 0;
-
-            function typeWriter() {
-                if (index < textContent.length) {
-                    textElement.textContent = textContent.substring(0, index + 1); 
-                    index++;
-                    setTimeout(typeWriter, 50); 
-                }
-            }
-
-            typeWriter(); 
-        });
-
-        // Funções para aumentar e diminuir o tamanho da fonte
-        function increaseFontSize() {
-            let elements = document.querySelectorAll('body, .titulo, .comecando, .texto, #textinho');
-            elements.forEach(function(element) {
-                let currentSize = window.getComputedStyle(element).fontSize;
-                currentSize = parseFloat(currentSize);
-                element.style.fontSize = (currentSize * 1.1) + 'px'; // Aumenta em 10%
-            });
-        }
-
-        function decreaseFontSize() {
-            let elements = document.querySelectorAll('body, .titulo, .comecando, .texto, #textinho');
-            elements.forEach(function(element) {
-                let currentSize = window.getComputedStyle(element).fontSize;
-                currentSize = parseFloat(currentSize);
-                element.style.fontSize = (currentSize * 0.9) + 'px'; // Diminui em 10%
-            });
-        }
-    </script>
-
-    <section class="font-size-buttons">
-        <button onclick="increaseFontSize()">A+</button>
-        <button onclick="decreaseFontSize()">A-</button>
-    </section>
-
     <section class="cards-container">
         <div class="card">
-            <div class="card-agenda">
-                <img src="agenda-icon.png" alt="Ícone de Agenda">
+            <div class="card-agenda" onclick="window.location.href='../PaginaAgenda/Agenda.html'">
+                <img src="/img/calendario.png" width="250px" alt="Ícone de Agenda">
             </div>
-            <button class="botao">
-                <a href="">Agenda</a>
+            <button class="botao" onclick="window.location.href='../PaginaAgenda/Agenda.html'">
+                <a href="">AGENDA</a>
             </button>
         </div>
 
         <div class="card">
             <div class="card-microfone">
-                <img src="microfone-icon.png" alt="Ícone de Microfone">
+                <img src="/img/microfone.png" width="250px" alt="Ícone de Microfone">
             </div>
             <button class="botao">
-                <a href="">Microfone</a>
+                <a href="">MICROFONE</a>
             </button>
         </div>
 
         <div class="card">
             <div class="card-ranking">
-                <img src="ranking-icon.png" alt="Ícone de Ranking">
+                <img src="/img/ranking.png" width="360px" alt="Ícone de Ranking">
             </div>
             <button class="botao">
-                <a href="">Ranking</a>
+                <a href="">RANKING</a>
             </button>
         </div>
     </section>
