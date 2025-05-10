@@ -7,7 +7,7 @@
 
 
 body {
-    background-color: #29272F;
+    background-color: #feffec;
     font-family: 'Young Serif', sans-serif;
     cursor: pointer;
     width: 100%;
@@ -27,7 +27,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #FEEBBA;
+    color: #7779fd;
     text-decoration: none;
     font-family: 'Young Serif', sans-serif;
     font-style: normal;
@@ -35,7 +35,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FAD86B;
+    color: #686bff;
 }
 
 
@@ -63,7 +63,7 @@ nav ul {
 }
 
 .conta {
-    background-color: #FAD86B;
+    background-color: #686bff;
     color: #29272F;
     font-size: 16px;
     padding: 10px 20px;
@@ -78,11 +78,11 @@ nav ul {
 }
 
 .conta:hover {
-    background-color: #daaf22;
+    background-color: #5557ff;
 }
 
 .titulo {
-    color: #FAD86B;
+    color: #686bff;
     font-size: 45px;
     font-family: 'Young Serif', sans-serif;
     text-align: left;
@@ -104,14 +104,13 @@ nav ul {
 
 
 .comecando {
-    background-color: #29272F;
+    background-color: #e0e0e0;
     width: 620px;
     height: 320px;
     border-radius: 30px;
     cursor: pointer;
     scale: 80%;
     transition: 0.7s;
-    border: solid 1px #daaf22;
 }
 
 .comecando:hover{
@@ -119,7 +118,7 @@ nav ul {
 }
 
 #textinho {
-    color: #FEEBBA;
+    color: #7779fd;
     font-size: 20px;
     margin-left: 40px;
     cursor: pointer;
@@ -129,7 +128,7 @@ nav ul {
 
 .botao-comecar button {
     
-    background-color: #FAD86B;
+    background-color: #686bff;
     border: none;
     width: 528px;
     height: 100px;
@@ -145,7 +144,7 @@ nav ul {
 }
 
 .botao-comecar button:hover {
-    background-color: #daaf22;
+    background-color: #5557ff;
     font-family: Titillium Web, sans-serif;
 }
 
@@ -165,7 +164,7 @@ nav ul {
 }
 
 .card-agenda, .card-microfone, .card-ranking {
-    background-color: #29272F;
+    background-color: #e0e0e0;
     width: 430px;
     height: 380px;
     border-radius: 30px;
@@ -173,7 +172,6 @@ nav ul {
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
-    border: solid 1px #daaf22;  
 }
 
 .card-agenda:hover, .card-microfone:hover, .card-ranking:hover {
@@ -183,7 +181,7 @@ nav ul {
 
 .botao {
     width: 430px;
-    background-color: #FAD86B;
+    background-color: #686bff;
     color: #29272F;
     font-size: 18px;
     padding: 10px 20px;
@@ -196,7 +194,7 @@ nav ul {
 }
 
 .botao:hover {
-    background-color: #daaf22;
+    background-color: #5557ff;
     transform: scale(1.02);
     font-family: Titillium Web, sans-serif;
 }
@@ -209,7 +207,7 @@ nav ul {
 .texto {
     font-size: 24px;
     line-height: 1.6;
-    color: #FEEBBA;
+    color: #7779fd;
     position: absolute;
     top: 200px;  
     right: 50px; 
@@ -227,7 +225,7 @@ nav ul {
     content: "|";  
     display: inline-block;
     animation: blink 0.7s infinite;
-    color: #FEEBBA;
+    color: #7779fd;
 }
 
 li{
@@ -239,5 +237,7 @@ li:hover{
     transform: scale(1.01);
 }
 @keyframes blink {
-    50% { opacity: 0; }
+    50% { opacity: 0; } 
 }
+
+/*686bff*/
