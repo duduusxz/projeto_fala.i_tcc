@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Young Serif', serif;
+    background-color: #404040;
+    color: #fceabb;
+  }
+  
+  .top-bar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .menu-icon button {
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #fceabb;
+    cursor: pointer;
+  }
+  
+  fas fa-bars{
+    transition: 0.7s;
+  }
+  
+  fas fa-bars:hover{
+    color:#FAD86B;
+    
+  }
+  
+  .menu-lateral {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: #29272F;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+  
+  .menu-lateral.ativo {
+    left: 0;
+  }
+  
+  .menu-lateral ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-lateral ul li {
+    padding: 15px;
+    border-bottom: 1px solid #555;
+  }
+  
+  .menu-lateral ul li a {
+    color: #fceabb;
+    text-decoration: none;
+  }
+  
+  .btn-fechar {
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #fceabb;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .container {
+    background-color: #29272F;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 135px auto 0;
+  }
+  
+  .perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .perfil img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .funcoes {
+    margin-top: 27px;
+    background-color: #404040;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .funcoes li {
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .dados {
+    margin-top: 27px;
+    background-color: #29272F;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .dados li {
+    padding: 12px 0;
+    border-bottom: 1px solid #aaa;
+    display: flex;
+    justify-content: space-between;
+  }
+  .voltar a{
+    padding-right: 480px;
+    color: #fceabb;
+    transition: 0.7s;
+    text-decoration: none;
+  }
+  
+  .voltar a:hover{
+    color: #FAD86B;
+  }
+  
+  h2{
+    font-weight: lighter;
+  }
+
+  .alterar-foto{
+    margin-top: 20px;
+    width: 90px;
+    height: 36px;
+    border: solid 1px #FEEBBA;
+    background-color: transparent;
+    color: #FEEBBA;
+    border-radius: 10px;
+  }
+
+  button{
+    width: 80px;
+    height: 30px;
+    border: solid 1px #FEEBBA;
+    background-color: transparent;
+    color: #FEEBBA;
+    border-radius: 10px;
+  }
+
+  p{
+    font-size: 12px;
+  }
+  
+  #informacao{
+    padding-top: 10px;
+  }

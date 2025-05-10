@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Minha Conta</title>
+    <title>Conta</title>
     <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/345c519b8f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="MinhaConta.css"/>
+    <link rel="stylesheet" href="Conta.css"/>
+    <script src="MinhaConta.js"></script>
 </head>
 <body>
 
@@ -14,7 +15,7 @@
     <div class="menu-icon">
       <button onclick="abrirmenu()"><i class="fas fa-bars"></i></button>
     </div>
-    <div class="voltar"><a href="../PaginaInicial/TelaInicial.html">Voltar</a></div>
+    <div class="voltar"><a href="../PaginaConta/MinhaConta.html">Voltar</a></div>
     <div class="logo">logo</div>
   </div>
 
@@ -36,19 +37,22 @@
       <img src="/img/calendario.png" alt="Foto de perfil" />
       <h2>Eduardo Ataide Melo</h2>
     </div>
+    <button class="alterar-foto" onclick="window.location.href='../PaginaAgenda/Agenda.html'">Alterar Foto</button>
     <div class="funcoes">
       <ul>
-        <li id="conta" onclick="window.location.href='../PaginaConta/Conta.html'">Conta <span>&gt;</span></li>
-        <li id="troca-conta" onclick="window.location.href='../PaginaInicial/TelaInicial.html'">Mudar de Conta <span>&gt;</span></li>
-        <li id="feedback" onclick="window.location.href='../PaginaInicial/TelaInicial.html'">Conta<span>&gt;</span></li>
-        <li id="acessibilidade" onclick="window.location.href='../PaginaInicial/TelaInicial.html'">Acessibilidade <span>&gt;</span></li>
-        <li id="ajuda" onclick="window.location.href='../PaginaInicial/TelaInicial.html'">Ajuda/ Suporte <span>&gt;</span></li>
-        <li id="sobre" onclick="window.location.href='../PaginaInicial/TelaInicial.html'">Sobre Nós <span>&gt;</span></li>
-        <li id="sair" onclick="window.location.href='../PaginaInicial/TelaInicial.html'">Sair <span>&gt;</span></li>
+        <li id="conta">Conta <span>&gt;</span></li>
       </ul>
     </div>
-  </div>
 
-  <script src="MinhaConta.js"></script>
+    <div class="dados">
+        <ul>
+            <li>Nome: Dudu <button onclick="" id="editar">Editar</button></li>
+            <li>Curso: TI <button onclick="" id="editar">Editar</button></li>
+            <p id="informacao">Email: eduardoataidemelo@gmail.com</p><br>
+            <p id="informacao2">Número: 11 98369-9658</p><br>
+            <p id="informacao2">RM: 23263</p>
+        </ul>
+    </div>
+  </div>
 </body>
 </html>
