@@ -102,23 +102,24 @@ nav ul {
   .left, .right {
     flex: 1 1 300px;
     padding: 20px;
+    max-width: 810px;
   }
 
   .left h1 {
-    font-size: 50px;
+    font-size: 38px;
     margin-bottom: 20px;
     margin-left: 35px;
   }
 
   h1{
     color: #FAD86B;
-    margin-top: 75px;
+    padding-top: 30px;
     transition: 0.7s;
     cursor: pointer;
   }
 
   h1:hover{
-    transform: scale(1.01);
+    transform: scale(1.008);
     cursor: pointer;
     color: #daaf22; 
   }
@@ -140,10 +141,10 @@ nav ul {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-left: 35px;
     width: 330px;
     height: 80px;
     transition: 0.7s;
+    scale: 80%;
   }
 
   .add-task-btn:hover{
@@ -161,33 +162,32 @@ nav ul {
     background-color: #2d2c34;
     padding: 30px;
     border-radius: 20px;
-    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 500px;
     transition: 0.7s;
-    width: 800px;
-    margin-left: 80px;
+    width: 700px;
+    scale: 80%;
   }
 
   #texto{
     color: #FEEBBA;
-    font-size: 30px;
+    font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 75px;
+    margin-top: 30px;
     margin-left: 30px;
-    width: 800px;
+    width: 705px;
     transition: 0.7s;
   }
 
   #texto2{
     color: #FEEBBA;
-    font-size: 30px;
+    font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 20px;
     margin-left: 30px;
-    width: 800px;
+    width: 650px;
     transition: 0.7s;
   }
 
@@ -279,7 +279,6 @@ nav ul {
     margin-right: 250px;
     text-decoration: none;
   }
-  
 
   @media (max-width: 768px) {
     .main-content {

@@ -1,26 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">  <!--Bibliotecas para fontes-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <!--Bibliotecas para fontes-->
-    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Young+Serif&display=swap" rel="stylesheet"> <!--Bibliotecas para fontes-->
-    <link rel="shortcut icon" href="Images/Captura_de_tela_2025-03-14_174727-removebg-preview.png" type="image/x-icon">
-    <link rel="stylesheet" href="MinhaConta.css">
-    <script src="https://kit.fontawesome.com/345c519b8f.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Minha Conta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/345c519b8f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="MinhaConta.css"/>
 </head>
 <body>
-    <div class="container">
-        <div class="perfil">
-            <img src="" alt="Foto Eduardo">
-            <p>Eduardo</p>
-        </div>
-        <div class="funcoes">
-            <p>]kv m mrkmv</p>
-        </div>
+
+  <div class="top-bar">
+    <div class="menu-icon">
+      <button onclick="abrirmenu()"><i class="fas fa-bars"></i></button>
     </div>
+    <div class="voltar"><a href="../PaginaInicial/TelaInicial.html">Voltar</a></div>
+    <div class="logo">logo</div>
+  </div>
+
+  <div id="menu-lateral" class="menu-lateral">
+    <button onclick="fecharmenu()" class="btn-fechar">✖</button>
+    <ul>
+      <li><a href="#">Conta</a></li>
+      <li><a href="#">Mudar de Conta</a></li>
+      <li><a href="#">Feedback</a></li>
+      <li><a href="#">Acessibilidade</a></li>
+      <li><a href="#">Ajuda/Suporte</a></li>
+      <li><a href="#">Sobre Nós</a></li>
+      <li><a href="#">Sair</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="perfil">
+      <img src="/img/calendario.png" alt="Foto de perfil" />
+      <h2>Eduardo Ataide Melo</h2>
+    </div>
+    <div class="funcoes">
+      <ul>
+        <li>Conta <span>&gt;</span></li>
+        <li>Mudar de Conta <span>&gt;</span></li>
+        <li>Feedback <span>&gt;</span></li>
+        <li>Acessibilidade <span>&gt;</span></li>
+        <li>Ajuda/Suporte <span>&gt;</span></li>
+        <li>Sobre Nós <span>&gt;</span></li>
+        <li>Sair <span>&gt;</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="MinhaConta.js"></script>
 </body>
 </html>
