@@ -1,0 +1,229 @@
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #404040;
+    font-family: 'Young Serif', sans-serif;
+    cursor: pointer; 
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: #FEEBBA;
+    text-decoration: none;
+    font-family: 'Young Serif', sans-serif;
+    font-style: normal;
+    transition: 0.7s;
+}
+
+nav ul li a:hover {
+    color: #FAD86B;
+}
+
+
+.conta{
+    display: flex;
+    align-items: center;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-around; /* Espaço entre os elementos */
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    gap: 36px;
+    padding: 0;
+    margin: 0;
+}
+
+.conta {
+    background-color: #FAD86B;
+    color: #29272F;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+}
+
+.conta:hover {
+    background-color: #FEEBBA;
+}
+
+.titulo {
+    color: #FAD86B;
+    font-size: 45px;
+    font-family: 'Young Serif', sans-serif;
+    text-align: left;
+    width: 30px;
+    padding: 40px ;
+    margin-left: 30px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.titulo:hover{
+    color: #daaf22;
+    opacity: 0.3s;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+.comecando {
+    background-color: #29272F;
+    width: 620px;
+    height: 320px;
+    border-radius: 30px;
+    padding: 0;
+    margin-left: 60px;
+    cursor: pointer;
+    
+    
+}
+
+#textinho {
+    color: #FEEBBA;
+    font-size: 20px;
+    margin-left: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.botao-comecar button {
+    
+    background-color: #FAD86B;
+    border: none;
+    width: 528px;
+    height: 100px;
+    border-radius: 30px;
+    font-size: 40px;
+    cursor: pointer;
+    font-family: Titillium Web, sans-serif;
+    text-align: center;
+    margin-top: 82px;
+    margin-left: 40px;
+    color: #29272F;  
+}
+
+.botao-comecar button:hover {
+    background-color: #daaf22;
+    font-family: Titillium Web, sans-serif;
+}
+
+
+
+
+
+
+
+.cards-container {
+    display: flex;
+    justify-content: center; 
+    gap: 40px; 
+    margin-top: 160px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 15px;
+}
+
+.card-agenda, .card-microfone, .card-ranking {
+    background-color: #29272F;
+    width: 430px;
+    height: 380px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.card-agenda:hover, .card-microfone:hover, .card-ranking:hover {
+    transform: scale(1.05);
+}
+
+
+.botao {
+    width: 430px;
+    background-color: #FAD86B;
+    color: #29272F;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #daaf22;
+}
+
+.botao a {
+    text-decoration: none;
+    color: #29272F;
+    font-weight: bold;
+}
+
+.texto {
+    font-size: 24px;
+    line-height: 1.6;
+    color: #FEEBBA;
+    position: absolute;
+    top: 200px;  
+    right: 50px; 
+    max-width: 700px;
+    margin: 70px;
+    
+    white-space: pre-wrap; 
+    overflow: hidden;
+    display: inline-block;
+    text-align: justify; 
+}
+
+
+.texto::after {
+    content: "|";  
+    display: inline-block;
+    animation: blink 0.7s infinite;
+    color: #FEEBBA;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PaginaInicial.css">
+    <link rel="stylesheet" href="PaginaInicial.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">  <!--Bibliotecas para fontes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <!--Bibliotecas para fontes-->
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Young+Serif&display=swap" rel="stylesheet"> <!--Bibliotecas para fontes-->
+    <link rel="shortcut icon" href="Images/Captura_de_tela_2025-03-14_174727-removebg-preview.png" type="image/x-icon">
+    <script src="digitação.js"></script>
+    <script src="https://kit.fontawesome.com/345c519b8f.js" crossorigin="anonymous"></script>
+
+    <title>Página Inicial</title>
+
+    <style>
+        /* Estilos para os botões de aumentar e diminuir a fonte */
+        .font-size-buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .font-size-buttons button {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="PaginaLogin.html">Serviços</a></li>
+            <li><a href="PaginaCadastro.html">Quem somos</a></li>
+            <li><a href="PaginaInicial.html">Tutorial</a></li>
+            <li><a href="PaginaInicial.html">Contato</a></li>
+        </ul>
+        <button class="conta" onclick="window.location.href='PaginaLogin'"> <i class="fa-solid fa-circle-user"></i> ­ ­­Minha conta</button>
+    </nav>
+
+    <header class="titulo">
+        <h1>FALA.I</h1>
+    </header>
+
+    <section class="comecando">
+        <div class="botao-comecar">
+            <button onclick="window.location.href='PaginaLogin.html'">COMECE JÁ</button>
+        </div>
+        
+        <p id="textinho">
+            Comece agora a treinar sua oratória e arrasar nas suas próximas apresentações!
+        </p>
+
+    </section>
+
+    <section class="texto">
+        <p>
+            
+        </p>
+    </section>
+
+    <section class="texto" id="text"></section>
+
+    <section class="font-size-buttons">
+        <button onclick="increaseFontSize()">A+</button>
+        <button onclick="decreaseFontSize()">A-</button>
+    </section>
+
+    <section class="cards-container">
+        <div class="card">
+            <div class="card-agenda">
+                <img src="agenda-icon.png" alt="Ícone de Agenda">
+            </div>
+            <button class="botao" onclick="window.location.href='/PaginaAgenda/Agenda.html'">
+                <a href="">Agenda</a>
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="card-microfone">
+                <img src="microfone-icon.png" alt="Ícone de Microfone">
+            </div>
+            <button class="botao">
+                <a href="">Microfone</a>
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="card-ranking">
+                <img src="ranking-icon.png" alt="Ícone de Ranking">
+            </div>
+            <button class="botao">
+                <a href="">Ranking</a>
+            </button>
+        </div>
+    </section>
+
+</body>
+</html>
