@@ -74,7 +74,6 @@ nav ul {
     top: 20px;
     right: 20px;
     width: 150px;
-
 }
 
 .conta:hover {
@@ -99,7 +98,6 @@ nav ul {
 
 .titulo:hover{
     color: #5557ff;
-    opacity: 0.3s;
     cursor: pointer;
     transform: scale(1.06);
 }
@@ -253,6 +251,7 @@ li:hover{
 #textos{
     max-width: 580px;
     cursor: pointer;
+    color: #feffec;
 }
 
 

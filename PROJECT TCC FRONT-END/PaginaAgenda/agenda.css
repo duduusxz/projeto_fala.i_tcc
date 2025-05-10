@@ -5,12 +5,12 @@
   }
 
   body {
-    background-color: #404040;
+    background-color: #feffec;
     font-family: 'Georgia', sans-serif;
     cursor: pointer;
     width: 100%;
     height: 100%;
-    color: #FAD86B;
+    color: #686bff;
   }
   
   nav ul {
@@ -25,15 +25,15 @@
 }
 
 nav ul li a {
-    color: #FEEBBA;
+    color: #7779fd;
     text-decoration: none;
     font-family: 'Young Serif', sans-serif;
     font-style: normal;
-    transition: 0.7s;
+    transition: 0.4s;
 }
 
 nav ul li a:hover {
-    color: #FAD86B;
+    color: #686bff;
 }
 
 
@@ -61,14 +61,14 @@ nav ul {
 }
 
 .conta {
-    background-color: #FAD86B;
-    color: #29272F;
+    background-color: #686bff;
+    color: #feffec;
     font-size: 16px;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     border-radius: 15px;
-    transition: background-color 0.3s ease;
+    transition: 0.4s;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -76,7 +76,8 @@ nav ul {
 }
 
 .conta:hover {
-    background-color: #daaf22;
+    background-color: #5557ff;
+    transform: scale(1.05);
 }
 
   .account-btn {
@@ -112,16 +113,17 @@ nav ul {
   }
 
   h1{
-    color: #FAD86B;
+    color: #686bff;
     padding-top: 30px;
-    transition: 0.7s;
+    transition: 0.4s;
     cursor: pointer;
+    width: 450px;
   }
 
   h1:hover{
-    transform: scale(1.008);
+    transform: scale(1.02);
     cursor: pointer;
-    color: #daaf22; 
+    color: #5557ff; 
   }
 
   .add{
@@ -129,7 +131,7 @@ nav ul {
   }
 
   .add-task-btn {
-    background-color: #d6bd56;
+    background-color: #686bff;
     color: #1f1f1f;
     border: none;
     padding: 15px 20px;
@@ -143,12 +145,12 @@ nav ul {
     gap: 10px;
     width: 330px;
     height: 80px;
-    transition: 0.7s;
+    transition: 0.4s;
     scale: 80%;
   }
 
   .add-task-btn:hover{
-    background-color: #daaf22;
+    background-color: #5557ff;
     cursor: pointer;
     transform: scale(1.01);
   }
@@ -159,55 +161,55 @@ nav ul {
   }
 
   .calendar-icon {
-    background-color: #2d2c34;
+    background-color: #e0e0e0;
     padding: 30px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 500px;
-    transition: 0.7s;
+    transition: 0.4s;
     width: 700px;
     scale: 80%;
   }
 
   #texto{
-    color: #FEEBBA;
+    color: #7779fd;
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 30px;
     margin-left: 30px;
     width: 705px;
-    transition: 0.7s;
+    transition: 0.4s;
   }
 
   #texto2{
-    color: #FEEBBA;
+    color: #7779fd;
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 20px;
     margin-left: 30px;
     width: 650px;
-    transition: 0.7s;
+    transition: 0.4s;
   }
 
   #texto:hover{
     transform: scale(1.008);
-    color: #FAD86B;
+    color: #686bff;
   }
 
   #texto2:hover{
     transform: scale(1.008);
-    color: #FAD86B;
+    color: #686bff;
   }
 
   .calendar-icon img {
     max-width: 300px;
-    transition: 0.7s;
+    transition: 0.4s;
   }
 
   .calendar-icon:hover{
-    transform: scale(1.02);
+    transform: scale(1.07);
   }
 
   .overlay{
@@ -257,27 +259,35 @@ nav ul {
   }
 
   .data{
-    background-color: #FAD86B;
+    background-color: #686bff;
     color: #29272F;
     width: 300px;
-    border: solid 1px #daaf22;
+    border: solid 1px #5557ff;
     border-radius: 4px;
     height: 30px;
   }
 
   .tarefa{
-    background-color: #FAD86B;
+    background-color: #686bff;
     color: #29272F;
     width: 300px;
-    border: solid 1px #daaf22;
+    border: solid 1px #5557ff;
     border-radius: 4px;
     height: 30px;
   }
 
   .voltar{
-    color: #FAD86B;
+    color: #686bff;
     margin-right: 250px;
     text-decoration: none;
+  }
+
+  li{
+    transition: 0.4s;
+  }
+
+  li:hover{
+    transform: scale(1.08);
   }
 
   @media (max-width: 768px) {
