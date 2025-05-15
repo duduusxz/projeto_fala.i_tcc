@@ -8,8 +8,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Young Serif', serif;
-  background-color: #404040;
-  color: #fceabb;
+  background-color: #feffec;
+  color: #404040;
 }
 
 .top-bar {
@@ -27,7 +27,7 @@ body {
   font-size: 28px;
   background: none;
   border: none;
-  color: #fceabb;
+  color: #404040;
   cursor: pointer;
 }
 
@@ -36,7 +36,7 @@ fas fa-bars{
 }
 
 fas fa-bars:hover{
-  color:#FAD86B;
+  color:#686bff;
   
 }
 
@@ -46,7 +46,7 @@ fas fa-bars:hover{
   left: -250px;
   width: 200px;
   height: 100%;
-  background-color: #29272F;
+  background-color: #989898;
   padding-top: 60px;
   transition: left 0.3s ease;
   z-index: 999;
@@ -63,7 +63,7 @@ fas fa-bars:hover{
 
 .menu-lateral ul li {
   padding: 15px;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid #848484;
 }
 
 .menu-lateral ul li a {
