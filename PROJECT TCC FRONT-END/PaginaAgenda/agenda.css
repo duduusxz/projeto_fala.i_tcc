@@ -81,17 +81,24 @@ nav ul {
 }
 
   .account-btn {
+    background-color: #686bff;
+    color: #feffec;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.4s;
     position: absolute;
+    top: 20px;
     right: 20px;
-    top: 0;
-    background-color: #29272F;
-    color: #f5e087;
-    padding: 10px 15px;
-    border-radius: 10px;
-    gap: 10px;
-    display: flex;
-    align-items: center;
+    width: 150px;
   }
+
+  .account-btn:hover {
+    background-color: #5557ff;
+    transform: scale(1.05);
+}
 
   .main-content {
     display: flex;

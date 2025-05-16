@@ -193,4 +193,22 @@ body.dark-mode .titulo-bem-vindo{
     text-decoration: underline;
 }
 
+.account-btn {
+    background-color: #686bff;
+    color: #feffec;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.4s;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+  }
 
+  .account-btn:hover {
+    background-color: #5557ff;
+    transform: scale(1.05);
+}
