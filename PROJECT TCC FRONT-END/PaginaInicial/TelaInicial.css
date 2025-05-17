@@ -245,12 +245,12 @@ nav ul {
 }
 
 li{
-    transition: 0.4s;
+    transition: 0.2s;
     font-weight: lighter;
 }
 
 li:hover{
-    transform: scale(1.08);
+    transform: scale(1.10);
 }
 
 .espaco{

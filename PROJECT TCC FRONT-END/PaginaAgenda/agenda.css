@@ -25,7 +25,7 @@
 }
 
 nav ul li a {
-    color: #7779fd;
+    color: #686bff;
     text-decoration: none;
     font-family: 'Young Serif', sans-serif;
     font-style: normal;
@@ -33,7 +33,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #686bff;
+    color: #5557ff;
 }
 
 
@@ -290,11 +290,11 @@ nav ul {
   }
 
   li{
-    transition: 0.4s;
+    transition: 0.2s;
   }
 
   li:hover{
-    transform: scale(1.08);
+    transform: scale(1.10);
   }
 
   @media (max-width: 768px) {
