@@ -200,7 +200,7 @@ textarea:focus{
     left: 0;
     width: 72px; /* defina uma largura fixa ou ajustável */
     z-index: 1; /* para garantir que fique sobre o fundo */
-    transition: width 0.16s ease;
+    transition: width 0.16s ease-in-out;
 }
 
 .menu:hover{
@@ -233,7 +233,7 @@ textarea:focus{
 
 .icon-menu {
     position: fixed; /* Ou fixed, dependendo do seu scroll */
-    top: 0;
+    top: 20px;
     left: 0;
     z-index: 2; /* Garante que fique acima de outros elementos */
     width: 72px;
@@ -241,6 +241,30 @@ textarea:focus{
     justify-content: center;
     display: flex;
     height: 60px;
+    flex-direction: column;
+    
+}
+
+.add{
+    top: 10px;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4e9f0;
+    transition: background-color 0.2s;
+    scale: 110%;
+    font-size: 17px;
+    cursor: pointer;
+    flex-direction: initial;
+    position: relative;
+}
+
+.add:hover {
+    background-color: #c6cbd3;
+    transition: 0.3;
 }
 
 .resposta-animada {
