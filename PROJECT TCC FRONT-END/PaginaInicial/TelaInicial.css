@@ -48,7 +48,7 @@ nav {
     display: flex;
     justify-content: space-around; /* Espaço entre os elementos */
     align-items: center;
-    padding: 20px;
+    padding: 20px 40px;
 }
 
 nav ul {
@@ -60,6 +60,32 @@ nav ul {
     padding: 0;
     margin: 0;
 }
+
+.nav-left,
+.nav-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-content: center;
+    flex: 2;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-menu li a {
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
 
 .conta {
     background-color: #686bff;
@@ -93,7 +119,7 @@ nav ul {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 150px;
+    width: 155px;
   }
 
   .account-btn:hover {
