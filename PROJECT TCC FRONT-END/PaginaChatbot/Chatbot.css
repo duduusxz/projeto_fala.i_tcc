@@ -200,7 +200,7 @@ textarea:focus{
     left: 0;
     width: 72px; /* defina uma largura fixa ou ajustável */
     z-index: 1; /* para garantir que fique sobre o fundo */
-    transition: width 0.16s ease-in-out;
+    transition: width 0.3s ease-in-out;
 }
 
 .menu:hover{
