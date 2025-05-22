@@ -6,12 +6,10 @@
 
 body {
     background-color: #ffffff;
-    font-family: 'Georgia', sans-serif;
+    font-family: 'Young Serif', sans-serif;
     cursor: pointer;
     width: 100%;
     height: 100%;
-    color: #686bff;
-    margin: 0;
 }
 
 nav ul {
@@ -34,33 +32,21 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #5557ff;
-}
-
-li{
-    transition: 0.2s;
-    font-weight: lighter;
-}
-
-li:hover{
-    transform: scale(1.10);
+    color: #686bff;
 }
 
 
 .conta{
     display: flex;
     align-items: center;
-
+    
 }
 
 nav {
     display: flex;
-    justify-content: space-between; /* Espaço entre os elementos */
+    justify-content: space-around; /* Espaço entre os elementos */
     align-items: center;
-    padding: 20px;
-    position: relative; /* Necessário para posicionar absolutamente dentro */
-    align-items: center;
-    justify-content: center;
+    padding: 20px 40px;
 }
 
 nav ul {
@@ -72,6 +58,37 @@ nav ul {
     padding: 0;
     margin: 0;
 }
+
+.nav-left,
+.nav-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.nav-left{
+    left: 50px;
+    position: relative;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-content: center;
+    flex: 2;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-menu li a {
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
 
 .conta {
     background-color: #686bff;
@@ -105,14 +122,13 @@ nav ul {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 150px;
-}
+    width: 155px;
+  }
 
-.account-btn:hover {
+  .account-btn:hover {
     background-color: #5557ff;
     transform: scale(1.05);
 }
-
 .container{
     align-items: center;
     justify-content: center;
@@ -294,6 +310,15 @@ textarea:focus{
     line-height: 1.6;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+li{
+    transition: 0.2s;
+    font-weight: lighter;
+}
+
+li:hover{
+    transform: scale(1.10);
 }
 
 @keyframes surgirResposta {
