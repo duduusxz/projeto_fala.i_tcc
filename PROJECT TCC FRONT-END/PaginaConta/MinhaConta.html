@@ -9,27 +9,40 @@
     <link rel="stylesheet" href="MinhaConta.css"/>
 </head>
 <body>
+      <nav>
+        <div class="nav-left">
+          <img src="/PROJECT TCC FRONT-END/img/logo.png" alt="logo" width="60px" class="logo">
+        </div>
+      
+        <ul class="nav-menu">
+          <li id="bar"><a href="../PaginaInicial/TelaInicial.html">Serviços</a></li>
+          <li id="bar"><a href="PaginaCadastro.html">Quem somos</a></li>
+          <li id="bar"><a href="PaginaInicial.html">Tutorial</a></li>
+          <li id="bar"><a href="PaginaInicial.html">Contato</a></li>
+        </ul>
+      
+        <div class="nav-right">
+        </div>
+      </nav>
 
-  <div class="top-bar">
-    <div class="menu-icon">
-      <button onclick="abrirmenu()"><i class="fas fa-bars"></i></button>
+      <div class="menu-container">
+    <div class="icon-menu">
+        <button class="bars" onclick="abrirmenu()"><i class="fas fa-bars"></i></button>
     </div>
-    <div class="voltar"><a onclick="window.history.back()">Voltar</a></div>
-    <div class="logo">logo</div>
-  </div>
 
-  <div id="menu-lateral" class="menu-lateral">
-    <button onclick="fecharmenu()" class="btn-fechar">✖</button>
-    <ul>
-      <li><a href="../PaginaConta/Conta.html">Conta</a></li>
-      <li><a href="#">Mudar de Conta</a></li>
-      <li><a href="#">Feedback</a></li>
-      <li><a href="#">Acessibilidade</a></li>
-      <li><a href="#">Ajuda/Suporte</a></li>
-      <li><a href="#">Sobre Nós</a></li>
-      <li><a href="#">Sair</a></li>
-    </ul>
-  </div>
+    <div class="menu" id="menu">
+  <ul class="menu-itens">
+    <li id="navegacao">Home</li>
+    <li id="navegacao">Chatbot</li>
+    <li id="navegacao">Agenda</li>
+    <li id="navegacao">Aquecer</li>
+    <li id="navegacao">Ranking</li>
+    <li id="navegacao">Conta</li>
+    <li id="navegacao">Ajuda</li>
+    <li id="navegacao">Feedback</li>
+  </ul>
+</div>
+</div>
 
   <div class="container">
     <div class="perfil">
