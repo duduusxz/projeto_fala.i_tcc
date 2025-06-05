@@ -186,14 +186,13 @@ nav ul {
   
   .funcoes {
   margin-top: 40px;
-  background-color: var(--cinza-medio);
+  background-color: var(--fundo-branco);
   padding: 20px;
   border-radius: 12px;
 }
 
 .funcoes li {
-  padding: 12px 0;
-  border-bottom: 1px solid #babfc3;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   color: #491f7a;
@@ -206,7 +205,7 @@ h2{
   
   .dados {
     margin-top: 27px;
-    background-color: #29272F;
+    background-color: var(--fundo-branco);
     padding: 20px;
     border-radius: 12px;
   }
@@ -216,6 +215,7 @@ h2{
     border-bottom: 1px solid #aaa;
     display: flex;
     justify-content: space-between;
+    color: var(--roxo);
   }
   .voltar{
     padding-right: 480px;
@@ -269,12 +269,12 @@ h2{
 
   .alterar-foto{
     margin-top: 20px;
-    width: 90px;
-    height: 36px;
-    border: solid 1px #FEEBBA;
-    background-color: transparent;
-    color: #FEEBBA;
-    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: var(--fundo-branco);
+    color: var(--roxo);
+    border-radius: 8px;
   }
 
   p{
@@ -283,6 +283,11 @@ h2{
   
   #informacao{
     padding-top: 10px;
+    color: var(--roxo);
+  }
+
+  #informacao2{
+    color: var(--roxo);
   }
 
   #container1, #container2{
@@ -337,4 +342,12 @@ html, body {
   left: 941px;
   position: relative;
   transition: transform 0.8s ease-in-out;
+}
+
+#editar{
+  border: none;
+  border-radius: 8px;
+  width: 75px;
+  background-color: var(--cor-terciaria);
+  color: #ffffff;
 }
