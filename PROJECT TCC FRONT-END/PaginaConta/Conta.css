@@ -6,6 +6,7 @@
   --cinza-claro: #e4e9f0;
   --cinza-medio: #cfd4d8;
   --roxo: #491f7a;
+  --fundo-cinza: #efefef;
 }
 
 *{
@@ -114,6 +115,7 @@ nav ul {
     width: 72px; /* defina uma largura fixa ou ajustável */
     z-index: 1; /* para garantir que fique sobre o fundo */
     transition: width 0.3s ease-in-out;
+    overflow: hidden;
 }
 
 .menu:hover{
@@ -159,12 +161,14 @@ nav ul {
 }
 
   
-  .container {
-  background-color: var(--cinza-claro);
-  border-radius: 20px;
-  padding: 30px;
-  max-width: 600px;
-  margin: 40px auto 0;
+.container {
+    background-color: var(--cinza-claro);
+    border-radius: 20px;
+    padding: 30px;
+    width: 550px; /* Original width */
+    margin: 40px auto 0;
+    transition: width 0.5s ease-in-out; /* Smooth transition for width changes */
+    flex-shrink: 0; /* Prevents shrinking within the flex container by default */
 }
   
   .perfil {
@@ -273,8 +277,6 @@ h2{
     border-radius: 10px;
   }
 
-  
-
   p{
     font-size: 12px;
   }
@@ -282,3 +284,57 @@ h2{
   #informacao{
     padding-top: 10px;
   }
+
+  #container1, #container2{
+    left: 683.5px;
+    position: relative;
+    transition: transform 0.8s ease-in-out;
+  }
+  
+  .opcoes {
+    display: flex;
+    transition: transform 0.8s ease-in-out; /* Smooth transition for movement */
+    /* You might need to adjust gap or margin here */
+    right: 300px;
+    position: relative;
+  }
+
+  .seta-esquerda, .seta-direita {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  background-color: #abaaff;
+  border: none;
+  padding: 5px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 100%;
+  z-index: 2;
+  color: var(--fundo-branco);
+}
+
+.seta-esquerda {
+  left: 440px;
+}
+
+.seta-direita {
+  right: 440px;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+#container2{
+  scale: 80%;
+  left: 470.5px;
+  position: relative;
+  transition: transform 0.8s ease-in-out;
+}
+
+#container3{
+  scale: 80%;
+  left: 941px;
+  position: relative;
+  transition: transform 0.8s ease-in-out;
+}
