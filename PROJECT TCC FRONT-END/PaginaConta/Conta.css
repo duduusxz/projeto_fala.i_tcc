@@ -15,6 +15,10 @@
     padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
     background-color: #ffffff;
     font-family: 'Young Serif', sans-serif;
@@ -161,7 +165,7 @@ nav ul {
 }
 
   
-.container {
+.container1, .container2, .container3, .container4{
     background-color: var(--cinza-claro);
     border-radius: 20px;
     padding: 30px;
@@ -290,8 +294,8 @@ h2{
     color: var(--roxo);
   }
 
-  #container1, #container2{
-    left: 683.5px;
+  #container1, #container2, #container3, #container4{
+    left: 793.5px;
     position: relative;
     transition: transform 0.8s ease-in-out;
   }
@@ -302,6 +306,7 @@ h2{
     /* You might need to adjust gap or margin here */
     right: 300px;
     position: relative;
+    gap: 10px;
   }
 
   .seta-esquerda, .seta-direita {
@@ -326,21 +331,8 @@ h2{
   right: 440px;
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
-#container2{
+#container2, #container3, #container4{
   scale: 80%;
-  left: 470.5px;
-  position: relative;
-  transition: transform 0.8s ease-in-out;
-}
-
-#container3{
-  scale: 80%;
-  left: 941px;
-  position: relative;
   transition: transform 0.8s ease-in-out;
 }
 
