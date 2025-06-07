@@ -34,7 +34,8 @@
         <div class="logo-bem-vindo"></div>
     </div>
 
-    <div class="container-login">
+    <div class="tudo">
+    <div class="container-login" id="container-login">
         <div class="login">
             <h3>Login</h3> 
             <p>E-mail</p> 
@@ -56,16 +57,45 @@
         <div class="entrar-cadastro">
             <div class="linha-botoes">
                 <button type="submit" id="entrar">Entrar</button>
-                <button type="submit" id="cadastrar">Cadastrar</button>
+                <button type="submit" id="cadastrar" onclick="moverContainer('direita')">Cadastrar</button>
             </div>
             <a href="" id="esqueci-senha">Esqueci minha senha</a>
         </div>
         </div>
     </div>
 
+    <div class="container-cadastro" id="container-cadastro">
+        <div class="cadastro">
+            <h3>Cadastro</h3> 
+            <p>E-mail</p> 
+            <input type="text" placeholder="  Digite seu email" id="email"> 
+
+            <div class="linha-rm-senha">
+                <div>
+                    <p>Rm</p>
+                    <input type="text" placeholder="  Digite seu Rm" id="rm">
+                </div>
+                <div>
+                    <p>Senha</p>
+                    <input type="password" placeholder="  Digite sua senha" id="senha">
+                    <i class="fas fa-eye" id="toggleSenha" onclick="mostrarSenha()"></i>
+                </div>
+            </div>
+
+
+        <div class="cadastro-entrar">
+            <div class="botoes-linha">
+                <button type="submit" id="cadastrar2">Cadastrar</button>
+                <button type="submit" id="entrar2" onclick="moverContainer('esquerda')">Entrar</button>
+            </div>
+            <a href="" id="esqueci-senha">Esqueci minha senha</a>
+        </div>
+        </div>
+    </div>
+
+    </div>
+
     
     <script src="PaginaLogin.js"></script>
 </body>
 </html>
-
-

@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+html, body{
+    overflow-x: hidden;
+}
+
 body{
     background-color: var(--cinza-claro);
     box-sizing: border-box;
@@ -50,7 +54,9 @@ h3 {
     font-size: 40px;
     color: var(--hover);
     margin-bottom: 15px;
+    margin-top: -20px; /* Adicionar uma margem negativa aqui */
 }
+
 input{
     
     border-radius: 13px;
@@ -63,23 +69,56 @@ input{
     margin-bottom: 10px;
 }
 
+
+.tudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaço entre os containers */
+}
+
 .container-login{
     position: absolute;
-    top: 45%;
+    top: 47%; /* Reduzir este valor para mover o container para cima */
     right: 10%;
     transform: translateY(-50%);
     background-color: #37353c;
-    height: auto; /* se ajusta ao conteúdo */
-    padding: 40px; /* garante espaço interno confortável */
+    height: auto;
+    padding: 40px;
+    padding-bottom: 80px;
     width: 40%;
     align-items: center;
     justify-content: center;
     display: flex;
     border-radius: 10px;
+    transition: transform 1s ease;
 }
 
-.login {
-    padding: 20px 30px;
+.container-cadastro{
+    position: absolute;
+    top: 47%;
+    left: 100%;
+    transform: translateY(-50%);
+    background-color: var(--cinza-claro);
+    height: auto;
+    padding: 40px;
+    padding-bottom: 80px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    transition: transform 1s ease;
+}
+
+
+.cadastro{
+     padding: 10px 30px 20px 30px; /* Reduzir o primeiro valor (padding superior) */
+}
+
+.cadastro{
+     padding: 10px 30px 20px 30px; /* Reduzir o primeiro valor (padding superior) */
 }
 
 p{
@@ -141,17 +180,32 @@ button{
     border: none;
 }
 
+#cadastrar2{
+    border: none;
+    color: white;
+}
+
 #cadastrar{
     width: 130px;
     background-color: #0099ff;
     border: none;
 }
 
-#esqueci-senha{
-    margin-bottom: 300px;
+#entrar2{
+    width: 130px;
+    background-color: #0099ff;
+    border: none;
+    color: white;
 }
 
 .entrar-cadastro{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30px;
+}
+
+.cadastro-entrar{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -164,15 +218,26 @@ button{
     margin-top: 20px;
 }
 
+.botoes-linha{
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+
 #esqueci-senha{
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--cinza-claro);
 }
 
 .container-bem-vindo{
     position: absolute;
     left: 135px; 
     top: 70px;   
+}
+
+body.dark-mode #esqueci-senha{
+    color: #0062cb;
 }
     
 body.dark-mode {
@@ -234,6 +299,14 @@ body.dark-mode p {
 
 body.dark-mode h3 {
     color: var(--cor-principal);
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: var(--hover);
+    margin-bottom: 15px;
+    margin-top: -20px; /* Adicionar uma margem negativa aqui */
 }
 
 body.dark-mode .titulo-bem-vindo{
@@ -242,16 +315,22 @@ body.dark-mode .titulo-bem-vindo{
 
 body.dark-mode .container-login{
     position: absolute;
-    top: 45%;
+    top: 47%; /* Reduzir este valor para mover o container para cima */
     right: 10%;
     transform: translateY(-50%);
-    background-color: var(--fundo-cinza);
-    height: 56%;
+    background-color: var(--cinza-claro);
+    height: auto;
+    padding: 40px;
+    padding-bottom: 80px;
     width: 40%;
     align-items: center;
     justify-content: center;
     display: flex;
     border-radius: 10px;
+}
+
+body.dark-mode .login{
+    padding: 10px 30px 20px 30px; /* Reduzir o primeiro valor (padding superior) */
 }
 
 
@@ -295,7 +374,7 @@ i {
   position: absolute;
   transform: translateY(-50%);
   right: 60px;
-  top: 75%;
+  top: 59%;
   cursor: pointer;
   color: var(--cor-principal);
 }
