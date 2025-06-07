@@ -58,7 +58,6 @@ h3 {
 }
 
 input{
-    
     border-radius: 13px;
     width: 529px;
     height: 36px;
@@ -110,15 +109,33 @@ input{
     display: flex;
     border-radius: 10px;
     transition: transform 1s ease;
+    scale: 90%;
 }
 
-
-.cadastro{
-     padding: 10px 30px 20px 30px; /* Reduzir o primeiro valor (padding superior) */
+.senha-esquecida{
+    position: absolute;
+    top: 47%;
+    left: 100%;
+    transform: translateY(-50%);
+    background-color: var(--cinza-claro);
+    height: auto;
+    padding: 40px;
+    padding-bottom: 80px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    transition: transform 1s ease;
+    scale: 90%;
 }
 
-.cadastro{
-     padding: 10px 30px 20px 30px; /* Reduzir o primeiro valor (padding superior) */
+.login{
+    padding: 10px 30px 20px 30px; /* Reduzir o primeiro valor (padding superior) */
+}
+
+.esquecida{
+    padding: 10px 30px 20px 30px; /* Reduzir o primeiro valor (padding superior) */
 }
 
 p{
@@ -171,7 +188,7 @@ p{
 button{
     background-color: var(--cor-principal);
     border-radius: 10px;
-    width: 390px;
+    width: 360px;
     height: 39px;
     border: none;
 }
@@ -230,10 +247,18 @@ button{
     color: var(--cinza-claro);
 }
 
+#ou{
+    margin-top: 10px;
+}
+
 .container-bem-vindo{
     position: absolute;
     left: 135px; 
     top: 70px;   
+}
+
+#confirma-senha{
+    margin-top: 10px;
 }
 
 body.dark-mode #esqueci-senha{
@@ -375,6 +400,15 @@ i {
   transform: translateY(-50%);
   right: 60px;
   top: 59%;
+  cursor: pointer;
+  color: var(--cor-principal);
+}
+
+#toggleSenha2{
+  position: absolute;
+  transform: translateY(-50%);
+  right: 60px;
+  top: 49.5%;
   cursor: pointer;
   color: var(--cor-principal);
 }
