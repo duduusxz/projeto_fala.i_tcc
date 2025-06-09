@@ -11,8 +11,8 @@ let tamanhoAtual = parseFloat(window.getComputedStyle(texto).fontSize);
 
 let novoTamanho = tamanhoAtual * 1.1;
 
-if (novoTamanho > 32) {
-novoTamanho = 32
+if (novoTamanho > 30) {
+novoTamanho = 30
 }
 
 texto.style.fontSize = novoTamanho + "px";
@@ -21,7 +21,7 @@ texto.style.fontSize = novoTamanho + "px";
 
 document.getElementById("decrease-font").addEventListener("click", function () {
     let tamanhoAtual = parseFloat(window.getComputedStyle(texto).fontSize);
-    if (tamanhoAtual > tamanhoBase * 0.8) { // Evita que fique muito pequeno
+    if (tamanhoAtual > tamanhoBase * 1) { // Evita que fique muito pequeno
         texto.style.fontSize = (tamanhoAtual * 0.9) + "px"; // Diminui 10%
     }
 
@@ -95,3 +95,21 @@ function mostrarSenha() {
 
   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const textoDigitadoElement = document.getElementById('texto-apresentacao-bem-vindo');
+    const texto = "Conheça a nova plataforma que vai alavancar sua oratória com a nova inteligência artificial Fala.i";
+    let i = 0;
+
+    function digitar() {
+        if (i < texto.length) {
+            textoDigitadoElement.textContent += texto.charAt(i);
+            i++;
+            setTimeout(digitar, 30); // Ajuste o tempo para controlar a velocidade da digitação
+        } else {
+            textoDigitadoElement.style.borderRight = 'none'; // Remove o cursor após a digitação
+        }
+    }
+
+    digitar();
+});
