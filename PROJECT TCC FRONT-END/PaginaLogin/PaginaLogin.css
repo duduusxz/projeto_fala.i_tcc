@@ -52,7 +52,7 @@ h3 {
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
-    color: var(--hover);
+    color: white;
     margin-bottom: 15px;
     margin-top: -20px; /* Adicionar uma margem negativa aqui */
 }
@@ -61,9 +61,9 @@ input{
     border-radius: 13px;
     width: 529px;
     height: 36px;
-    border: solid 1px var(--cor-principal);
+    border: solid 1px white;
     background-color: transparent;
-    color: var(--cor-terciaria);
+    color: white;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -99,7 +99,7 @@ input{
     top: 47%;
     left: 100%;
     transform: translateY(-50%);
-    background-color: var(--cinza-claro);
+    background-color: #37353c;
     height: auto;
     padding: 40px;
     padding-bottom: 80px;
@@ -117,7 +117,7 @@ input{
     top: 47%;
     left: 100%;
     transform: translateY(-50%);
-    background-color: var(--cinza-claro);
+    background-color: #37353c;
     height: auto;
     padding: 40px;
     padding-bottom: 80px;
@@ -139,23 +139,23 @@ input{
 }
 
 p{
-    color: var(--cor-principal);
+    color: white;
 }
 
 #rm{
     width: 253px;
     height: 36px;
-    border: solid 1px var(--cor-principal);
-    color: var(--cor-principal);
+    border: solid 1px white;
+    color: white;
     background-color: transparent;
 }
 
 #senha {
     width: 253px;
     height: 36px;
-    border: solid 1px var(--cor-principal);
+    border: solid 1px white;
     background-color: transparent;
-    color: var(--cor-principal);
+    color: white;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -165,14 +165,8 @@ p{
 }
 
 #email{
-    border: solid 1px var(--cor-principal);
-    color: var(--cor-principal);
-}
-
-#louco{
-    margin-left: 285px;
-    margin-top: -70px;
-    color: var(--cor-principal);
+    border: solid 1px white;
+    color: white;
 }
 
 
@@ -195,6 +189,7 @@ button{
 
 #entrar{
     border: none;
+    color: white;
 }
 
 #cadastrar2{
@@ -206,6 +201,7 @@ button{
     width: 130px;
     background-color: #0099ff;
     border: none;
+    color: white;
 }
 
 #entrar2{
@@ -354,10 +350,65 @@ body.dark-mode .container-login{
     border-radius: 10px;
 }
 
+body.dark-mode .container-cadastro{
+    position: absolute;
+    top: 47%;
+    left: 100%;
+    transform: translateY(-50%);
+    background-color: var(--cinza-claro);
+    height: auto;
+    padding: 40px;
+    padding-bottom: 80px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    transition: transform 1s ease;
+    scale: 90%;
+}
+
 body.dark-mode .login{
     padding: 10px 30px 20px 30px; /* Reduzir o primeiro valor (padding superior) */
 }
 
+body.dark-mode input{
+    border-radius: 13px;
+    width: 529px;
+    height: 36px;
+    border: solid 1px var(--cor-principal);
+    background-color: transparent;
+    color: var(--cor-terciaria);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body.dark-mode i {
+  position: absolute;
+  transform: translateY(-50%);
+  right: 60px;
+  top: 59%;
+  cursor: pointer;
+  color: var(--cor-principal);
+}
+
+body.dark-mode .senha-esquecida{
+    position: absolute;
+    top: 47%;
+    left: 100%;
+    transform: translateY(-50%);
+    background-color: var(--cinza-claro);
+    height: auto;
+    padding: 40px;
+    padding-bottom: 80px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    transition: transform 1s ease;
+    scale: 90%;
+}
 
 .controls {
     margin: 10px 0;
@@ -401,7 +452,7 @@ i {
   right: 60px;
   top: 59%;
   cursor: pointer;
-  color: var(--cor-principal);
+  color: #67676b;
 }
 
 #toggleSenha2{
