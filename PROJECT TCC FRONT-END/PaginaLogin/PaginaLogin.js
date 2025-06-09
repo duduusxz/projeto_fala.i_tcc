@@ -56,8 +56,8 @@ function moverContainer(direcao) {
         containerLogin.style.transform = 'translateX(0) translateY(-50%)';
         containerCadastro.style.transform = 'translateX(0) translateY(-50%)';
     } else if (posicaoAtual === 1) {
-        containerLogin.style.transform = 'translateX(768px) translateY(-50%)';
-        containerCadastro.style.transform = 'translateX(-857px) translateY(-50%) scale(1.10)';
+        containerLogin.style.transform = 'translateX(200%) translateY(-50%)';
+        containerCadastro.style.transform = 'translateX(-140%) translateY(-50%) scale(1.10)';
     }
 }
 
@@ -75,8 +75,8 @@ function moverContainer2(direcao) {
         containerLogin.style.transform = 'translateX(0) translateY(-50%)';
         senhaEsquecida.style.transform = 'translateX(0) translateY(-50%)';
     } else if (posicaoAtual === 1) {
-        containerLogin.style.transform = 'translateX(768px) translateY(-50%)';
-        senhaEsquecida.style.transform = 'translateX(-857px) translateY(-55%) scale(1.10)';
+        containerLogin.style.transform = 'translateX(200%) translateY(-50%)';
+        senhaEsquecida.style.transform = 'translateX(-140%) translateY(-55%) scale(1.10)';
     }
 }
 
