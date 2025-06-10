@@ -353,6 +353,32 @@ h2{
   color: #ffffff;
 }
 
+#enviar{
+  border: none;
+  border-radius: 8px;
+  width: 150px;
+  height: 30px;
+  background-color: var(--cor-terciaria);
+  color: #ffffff;
+  margin: 20px;
+  margin-left: 0;
+}
+
+#problema{
+  width: 450px;
+  max-width: 450px;
+  min-width: 450px;
+  height: 200px;
+  max-height: 200px;
+  min-height: 200px;
+  border-radius: 8px;
+  border: solid 1px #616161;
+}
+
+textarea:focus{
+    outline: none;
+}
+
 input{
     border-radius: 8px;
     width: 200px;
